@@ -1,8 +1,9 @@
 :root {
   --color1: #f2f2f2;
   --color2: #0065fc;
-  --color3: #deebff;
+  --color3: #0065fc;
   --color4: black;
+  --color5: #deebff;
 }
 
 * {
@@ -48,6 +49,27 @@ a {
 }
 
 nav li a:hover {
-  color: var(--color2);
+  color: var(--color3);
   border-top: 2px solid var(--color2);
+}
+
+/* Version Mobile */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #logo {
+    margin: 30px 30px;
+  }
+
+  nav li a {
+    padding: 10px 30px;
+    margin-right: 0px;
+  }
+
+  nav li a:hover {
+    border-top: none;
+    border-bottom: 2px solid var(--color2);
+  }
 }
