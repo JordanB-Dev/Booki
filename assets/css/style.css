@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "font";
+  src: url(/assets/fonts/Raleway-Medium.ttf);
+}
+
+body {
+  font-family: "font", sans-serif;
+}
