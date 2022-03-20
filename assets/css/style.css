@@ -3,7 +3,7 @@
   --color2: #0065fc;
   --color3: #0065fc;
   --color4: black;
-  --color5: #deebff;
+  --color5: #ffffff;
 }
 
 * {
@@ -30,7 +30,7 @@ nav {
 
 #logo {
   height: 50px;
-  margin: 50px 60px;
+  margin: 40px 60px;
 }
 
 nav ul {
@@ -39,7 +39,7 @@ nav ul {
 }
 
 nav li a {
-  padding: 63px 30px;
+  padding: 53px 30px;
   margin-right: 10px;
 }
 
@@ -53,8 +53,60 @@ nav li a:hover {
   border-top: 2px solid var(--color2);
 }
 
+/* Search */
+#search h1 {
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+
+#search p {
+  margin-left: 40px;
+}
+
+#search-bar {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 60px;
+  align-items: center;
+}
+
+#search-bar i {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+#search-bar input {
+  height: 50px;
+  width: 240px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-left: 10px;
+  border: none;
+}
+
+#search-bar input::placeholder {
+  color: var(--color4);
+}
+
+#search-bar button {
+  position: relative;
+  cursor: pointer;
+  width: 130px;
+  height: 55px;
+  left: -5px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: var(--color2);
+}
+#search-bar button span {
+  color: var(--color5);
+  font-size: 1.1rem;
+}
+
 /* Version Mobile */
 @media screen and (max-width: 600px) {
+  /* Header */
   nav {
     flex-direction: column;
   }
