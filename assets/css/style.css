@@ -1,3 +1,10 @@
+:root {
+  --color1: #f2f2f2;
+  --color2: #0065fc;
+  --color3: #deebff;
+  --color4: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,4 +18,36 @@
 
 body {
   font-family: "font", sans-serif;
+}
+
+/* Header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 50px;
+  margin: 50px 60px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li a {
+  padding: 63px 30px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+nav li a:hover {
+  color: var(--color2);
+  border-top: 2px solid var(--color2);
 }
