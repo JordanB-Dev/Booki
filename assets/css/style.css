@@ -71,9 +71,15 @@ nav li a:hover {
   align-items: center;
 }
 
-#search-bar i {
+#search-icon {
+  position: relative;
+  padding: 15px;
+  height: 55px;
+  right: -5px;
+  border-radius: 15px 0 0 15px;
+  background: var(--color1);
   font-size: 20px;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 #search-bar input {
@@ -110,6 +116,26 @@ nav li a:hover {
 }
 
 /* Filters */
+#filters {
+  display: flex;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#filter {
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.filter-flex {
+  display: flex;
+  margin-right: 70px;
+}
+
+.filter-icon {
+  margin-right: 20px;
+}
 
 /* Version Mobile */
 @media screen and (max-width: 600px) {
@@ -160,7 +186,6 @@ nav li a:hover {
   #search-bar button i {
     position: relative;
     display: block;
-    right: -10px;
     color: var(--color5);
   }
 }
