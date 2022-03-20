@@ -55,6 +55,7 @@ nav li a:hover {
 
 /* Search */
 #search h1 {
+  font-size: 1.4rem;
   margin-left: 40px;
   padding-bottom: 10px;
 }
@@ -95,13 +96,17 @@ nav li a:hover {
   height: 55px;
   left: -5px;
   border: none;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0 15px 15px 0;
   background: var(--color2);
 }
+
 #search-bar button span {
   color: var(--color5);
   font-size: 1.1rem;
+}
+
+#search-bar button i {
+  display: none;
 }
 
 /* Version Mobile */
@@ -112,16 +117,47 @@ nav li a:hover {
   }
 
   #logo {
-    margin: 30px 30px;
+    margin: 30px;
   }
 
   nav li a {
     padding: 10px 30px;
-    margin-right: 0px;
+    align-items: center;
   }
 
   nav li a:hover {
     border-top: none;
     border-bottom: 2px solid var(--color2);
+  }
+
+  #search h1 {
+    padding-top: 40px;
+    margin-left: 20px;
+  }
+
+  #search p {
+    margin-left: 20px;
+  }
+
+  #search-bar {
+    margin-left: 20px;
+  }
+
+  #search-bar button {
+    width: 50px;
+    height: 55px;
+    left: -20px;
+    border-radius: 15px;
+  }
+
+  #search-bar button span {
+    display: none;
+  }
+
+  #search-bar button i {
+    position: relative;
+    display: block;
+    right: -10px;
+    color: var(--color5);
   }
 }
