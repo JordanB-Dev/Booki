@@ -1,7 +1,7 @@
 :root {
   --color1: #f2f2f2;
   --color2: #0065fc;
-  --color3: rgba(44, 59, 80, 0.425);
+  --color3: #deebff;
   --color4: black;
   --color5: #ffffff;
 }
@@ -90,10 +90,6 @@ nav li a:hover {
   border: none;
 }
 
-#search-bar input::placeholder {
-  color: var(--color4);
-}
-
 #search-bar button {
   position: relative;
   cursor: pointer;
@@ -118,9 +114,11 @@ nav li a:hover {
 /* Filters */
 #filters {
   display: flex;
+  align-items: center;
   margin-top: 30px;
   font-size: 1.1rem;
   font-weight: 700;
+  flex-wrap: wrap;
 }
 
 #filter {
@@ -130,11 +128,30 @@ nav li a:hover {
 
 .filter-flex {
   display: flex;
-  margin-right: 70px;
+  cursor: pointer;
+  align-items: center;
+  margin-right: 30px;
+  border-radius: 30px;
+  border: 2px solid var(--color1);
 }
 
-.filter-icon {
-  margin-right: 20px;
+.filter-flex:hover {
+  border: 2px solid var(--color2);
+}
+
+.filter-flex i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color3);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.filter-flex p {
+  padding: 0 10px;
 }
 
 /* Version Mobile */
@@ -184,8 +201,9 @@ nav li a:hover {
   }
 
   #search-bar button i {
-    position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color5);
   }
 }
