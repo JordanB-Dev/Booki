@@ -49,7 +49,7 @@ a {
 }
 
 nav li a:hover {
-  color: var(--color3);
+  color: var(--color2);
   border-top: 2px solid var(--color2);
 }
 
@@ -75,7 +75,6 @@ nav li a:hover {
   position: relative;
   padding: 15px;
   height: 55px;
-  right: -5px;
   border-radius: 15px 0 0 15px;
   background: var(--color1);
   font-size: 20px;
@@ -101,6 +100,7 @@ nav li a:hover {
   width: 130px;
   height: 55px;
   left: -5px;
+  border: none;
   border-left: none;
   border-radius: 0 15px 15px 0;
   background: var(--color2);
