@@ -21,7 +21,7 @@ body {
   font-family: "font", sans-serif;
 }
 
-/* Header */
+/* Header + Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -119,30 +119,33 @@ nav li a:hover {
   font-size: 1.1rem;
   font-weight: 700;
   flex-wrap: wrap;
-}
-
-#filter {
   margin-left: 40px;
-  margin-right: 30px;
 }
 
-.filter-flex {
+#filters #filter {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+#filters .filter-flex {
   display: flex;
   cursor: pointer;
   align-items: center;
   margin-right: 30px;
   border-radius: 30px;
   border: 2px solid var(--color1);
+  margin-bottom: 10px;
 }
 
-.filter-flex:hover {
+#filters .filter-flex:hover {
   border: 2px solid var(--color2);
 }
 
-.filter-flex i {
+#filters .filter-flex i {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color2);
   background-color: var(--color3);
   height: 50px;
   width: 50px;
@@ -150,8 +153,27 @@ nav li a:hover {
   margin-right: 10px;
 }
 
-.filter-flex p {
+#filters .filter-flex p {
   padding: 0 10px;
+}
+
+#filter-info {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+#filter-info i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: var(--color2);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 2px solid var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Version Mobile */
