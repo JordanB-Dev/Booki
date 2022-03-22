@@ -192,7 +192,7 @@ section[id="card"] {
 /* Card Hébergements */
 
 #card-list {
-  background-color: var(--color2);
+  background-color: var(--color1);
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
   height: calc(100%);
@@ -276,7 +276,7 @@ p {
 /* Card Populaire */
 
 #card-populaire {
-  background-color: var(--color2);
+  background-color: var(--color1);
   padding: 30px 30px 20px 30px;
   border-radius: 20px;
   height: calc(100%);
@@ -350,14 +350,7 @@ p {
   /* Card Hébergement */
 
   #card-list .hebergement a {
-    flex-wrap: wrap;
     width: 280px;
-  }
-
-  /* Card Populaire */
-
-  #card-populaire .card-list .article-content .article-icon {
-    top: 125px;
   }
 }
 
@@ -447,5 +440,10 @@ p {
     align-items: center;
     justify-content: center;
     color: var(--color5);
+  }
+
+  /* Card Populaire */
+  #card-list .hebergement a {
+    width: 95%;
   }
 }
