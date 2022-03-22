@@ -24,6 +24,7 @@ body {
 }
 
 /* Header + Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,6 +57,7 @@ nav li a:hover {
 }
 
 /* Search */
+
 #search h1 {
   font-size: 1.4rem;
   margin-left: 40px;
@@ -69,7 +71,7 @@ nav li a:hover {
 #search-bar {
   display: flex;
   margin-top: 30px;
-  margin-left: 60px;
+  margin-left: 40px;
   align-items: center;
 }
 
@@ -85,7 +87,7 @@ nav li a:hover {
 
 #search-bar input {
   height: 51px;
-  width: 230px;
+  width: 270px;
   font-size: 1.1rem;
   font-weight: bold;
   padding-left: 10px;
@@ -114,6 +116,7 @@ nav li a:hover {
 }
 
 /* Filters */
+
 #filters {
   display: flex;
   align-items: center;
@@ -163,6 +166,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
   margin-left: 40px;
+  margin-top: 20px;
 }
 
 #filter-info i {
@@ -178,35 +182,45 @@ nav li a:hover {
   align-items: center;
 }
 
+/* Section Hébergements + Populaire */
+
+section[id="card"] {
+  display: flex;
+}
+
 /* Card Hébergements */
-#card {
-  background-color: var(--color1);
-  padding: 20px 20px 20px 20px;
+
+#card-list {
+  background-color: var(--color2);
+  padding: 10px 10px 10px 10px;
   border-radius: 20px;
-  height: calc(100% - 120px);
-  width: 60%;
+  height: calc(100%);
+  width: 70%;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
   box-sizing: content-box;
 }
 
-#card h2 {
-  margin-top: 30px;
+#card-list h2 {
+  margin-left: 25px;
+  margin-top: 20px;
 }
 
-#card .card-list {
+#card-list .hebergement {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
+  padding: 5px;
 }
 
-#card .card-list a {
-  width: 350px;
-  margin-bottom: 30px;
+#card-list .hebergement a {
+  flex-wrap: wrap;
+  width: 30%;
+  margin-bottom: 40px;
 }
 
-#card .card-list a article {
+#card-list .hebergement a article {
   display: flex;
   flex-direction: column;
   background-color: var(--color5);
@@ -215,41 +229,165 @@ nav li a:hover {
   height: 100%;
 }
 
-#card .card-list a article:hover {
+#card-list .hebergement a article:hover {
   box-shadow: 5px 5px 5px 0px var(--color6);
 }
 
-#card .card-list a article img {
+#card-list .hebergement a article img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   border-radius: 25px 25px 0px 0px;
   object-fit: cover;
 }
 
-#card .card-list a article .article-content h3,
+#card-list .hebergement a article .article-content h3 {
+  font-weight: bold;
+}
+
+#card-list .hebergement a article .article-content h3,
 p {
-  margin-bottom: 5px;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
 }
 
-#card .card-list a article .article-content {
+#card-list .hebergement a article .article-content {
   padding: 10px 10px 0px 10px;
+  font-size: 1.1rem;
 }
 
-#card .card-list a article .article-content .fa-star.b {
+#card-list .hebergement a article .article-content .fa-star.b {
   color: var(--color2);
 }
 
-#card .card-list a article .article-content .fa-star.g {
+#card-list .hebergement a article .article-content .fa-star.g {
   color: var(--color7);
 }
 
-#card .card-list a article .article-content .fa-star.g:hover {
+#card-list .hebergement a article .article-content .fa-star.g:hover {
   color: var(--color2);
 }
 
+#card-list h3[id="afficher"] {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+/* Card Populaire */
+
+#card-populaire {
+  background-color: var(--color2);
+  padding: 30px 30px 20px 30px;
+  border-radius: 20px;
+  height: calc(100%);
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-sizing: content-box;
+}
+
+#card-populaire .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#card-populaire .title i {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+#card-populaire .card-list {
+  margin-top: 30px;
+}
+
+#card-populaire .card-list a article {
+  display: flex;
+  background-color: var(--color5);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 35px;
+}
+
+#card-populaire .card-list a article:hover {
+  box-shadow: 5px 5px 5px 0px var(--color6);
+}
+
+#card-populaire .card-list a article img {
+  border-radius: 25px 0px 0px 25px;
+  width: 40%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#card-populaire .card-list .article-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0 20px;
+}
+
+#card-populaire .card-list .article-content .article-icon {
+  position: absolute;
+  top: 110px;
+  color: var(--color2);
+}
+
+#card-populaire .card-list .article-content .article-icon .fa-star.g {
+  color: var(--color7);
+}
+
+#card-populaire .card-list .article-content .article-icon .fa-star.g:hover {
+  color: var(--color2);
+}
+
+/* Responsive */
+/* Version Ordinateur Portable */
+
+@media screen and (max-width: 1280px) {
+  /* Card Hébergement */
+
+  #card-list .hebergement a {
+    flex-wrap: wrap;
+    width: 280px;
+  }
+
+  /* Card Populaire */
+
+  #card-populaire .card-list .article-content .article-icon {
+    top: 125px;
+  }
+}
+
+/* Version Tablet */
+
+@media screen and (max-width: 1055px) {
+  /* Section Car Hébergement + Populaire */
+
+  section[id="card"] {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  /* Card Populaire */
+
+  #card-populaire {
+    width: 90%;
+  }
+
+  #card-populaire .card-list .article-content .article-icon {
+    top: 110px;
+  }
+}
+
 /* Version Mobile */
+
 @media screen and (max-width: 600px) {
-  /* Header */
+  /* Header + Navigation*/
+
   nav {
     flex-direction: column;
   }
@@ -269,6 +407,7 @@ p {
   }
 
   /* Search */
+
   #search h1 {
     padding-top: 40px;
     margin-left: 20px;
