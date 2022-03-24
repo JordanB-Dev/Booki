@@ -353,7 +353,7 @@ section[id="activite"] h2 {
   margin-top: 30px;
   box-sizing: content-box;
   justify-content: space-around;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 50px 20px;
 }
 
 #activite .card-list .box {
@@ -410,6 +410,35 @@ section[id="activite"] h2 {
 
 #activite .card-list a article .article-content h3 {
   padding: 10px 0 10px 30px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  background: var(--color1);
+  padding: 50px;
+}
+
+footer .column {
+  width: 30%;
+}
+
+footer .column h2 {
+  margin-bottom: 10px;
+}
+
+footer .column ul {
+  list-style-type: none;
+}
+
+footer .column ul li a {
+  color: var(--color4);
+  text-decoration: none;
+  line-height: 30px;
+}
+
+footer .column ul li a:hover {
+  font-weight: bold;
 }
 
 /* Responsive */
@@ -510,6 +539,16 @@ section[id="activite"] h2 {
 
   #card-populaire .card-list .article-content .article-icon {
     top: 110px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+  }
+
+  footer .column {
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
 
