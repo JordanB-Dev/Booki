@@ -23,6 +23,11 @@ body {
   font-family: "font", sans-serif;
 }
 
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+
 /* Header + Navigation */
 
 nav {
@@ -33,7 +38,7 @@ nav {
 
 #logo {
   height: 50px;
-  margin: 40px 60px;
+  margin: 0 60px 40px 30px;
 }
 
 nav ul {
@@ -42,7 +47,7 @@ nav ul {
 }
 
 nav li a {
-  padding: 53px 30px;
+  padding: 33px 30px;
   margin-right: 10px;
 }
 
@@ -418,8 +423,11 @@ section[id="activite"] h2 {
 
 /* Footer */
 footer {
-  display: flex;
   background: var(--color1);
+}
+
+footer .container {
+  display: flex;
   padding: 50px;
 }
 
@@ -458,6 +466,8 @@ footer .column ul li a:hover {
     width: 620px;
   }
 }
+
+
 
 /* Version Computer Laptop */
 @media only screen and (max-width: 1300px) {
@@ -559,7 +569,7 @@ footer .column ul li a:hover {
   }
 
   /* Footer */
-  footer {
+  footer .container {
     flex-direction: column;
   }
 
