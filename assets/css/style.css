@@ -14,18 +14,11 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "font";
-  src: url(/assets/fonts/Raleway-Medium.ttf);
-}
+ /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
 body {
-  font-family: "font", sans-serif;
-}
-
-.container {
-  max-width: 1800px;
-  margin: auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Header + Navigation */
@@ -38,7 +31,7 @@ nav {
 
 #logo {
   height: 50px;
-  margin: 0 60px 40px 30px;
+  margin: 0 60px 40px 60px;
 }
 
 nav ul {
@@ -59,6 +52,12 @@ a {
 nav li a:hover {
   color: var(--color2);
   border-top: 2px solid var(--color2);
+}
+
+/* Container 1800px */
+.container {
+  max-width: 1800px;
+  margin: auto;
 }
 
 /* Search */
@@ -467,8 +466,6 @@ footer .column ul li a:hover {
   }
 }
 
-
-
 /* Version Computer Laptop */
 @media only screen and (max-width: 1300px) {
   /* Activité */
@@ -491,7 +488,7 @@ footer .column ul li a:hover {
 
   #activite .card-list {
     flex-wrap: wrap;
-    margin: 30px 30px 0 30px;
+    padding: 0 20px 25px 20px;
   }
 
   #activite .card-list .box {
