@@ -488,7 +488,7 @@ footer .column ul li a:hover {
 
   #activite .card-list {
     flex-wrap: wrap;
-    padding: 0 20px 25px 20px;
+    margin: 30px 30px 0 30px;
   }
 
   #activite .card-list .box {
@@ -633,7 +633,50 @@ footer .column ul li a:hover {
   }
 
   /* Card Populaire */
-  #card-list .hebergement a {
-    width: 95%;
+  #card-list h2 {
+    margin-left: 10px;
   }
+
+  #card-list .hebergement a {
+    width: 100%;
+  }
+
+  #activite .card-list .box {
+    height: 200px;
+  }
+
+  #activite h2 {
+    margin-left: 20px;
+  }
+
+  #activite .card-list {
+    margin: 0;
+    padding: 30px 20px 25px 20px;
+  }
+
+  #activite .card-list .box-double article {
+    width: 100%;
+    height: 200px;
+  }
+
+  #activite .card-list .box-double .box.double {
+    width: 100%;
+    height: 200px;
+  }
+
+  #activite .card-list .box article img {
+    width: 100%;
+    height: 150px;
+  }
+
+  #activite .card-list .box-double a article img {
+    width: 100%;
+    height: 150px;
+  }
+
+  #activite .card-list .box-double a .box.double img {
+    width: 100%;
+    height: 150px;
+  }
+
 }
