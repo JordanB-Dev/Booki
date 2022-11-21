@@ -13,6 +13,8 @@ Sarah vous envoie un e-mail pour vous présenter l’avancée du projet.
 
 ![téléchargement](https://user-images.githubusercontent.com/101954241/202965295-6c581774-0ada-4a4c-80e3-5a70f3765062.png)
 
+- >  ### **Maquette Booki**
+<img  width="500" alt="16493434697192_Desktop - 1" src="https://user-images.githubusercontent.com/101954241/202970599-26ff29bd-8476-4ae6-8986-a4b3e404e769.png">
 
 - >  ### **Languages**
 
